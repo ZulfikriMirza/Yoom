@@ -1,9 +1,9 @@
 # YOOM PROJECT Following JavaScript Mastery Youtube Videos
 
 - [X] File & Folder Structure
-- [ ] Sidebar
-- [ ] Navbar
-- [ ] Clerk Auth
+- [X] Sidebar
+- [X] Navbar
+- [X] Clerk Auth
 - [ ] HomePage
 - [ ] Reusable Modal
 - [ ] Stream Create Meeting
