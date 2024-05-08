@@ -6,7 +6,7 @@
 - [X] Clerk Auth
 - [X] HomePage
 - [X] Reusable Modal
-- [ ] Stream Create Meeting
+- [X] Stream Create Meeting
 - [ ] Meetings Calls Setup
 - [ ] Meeting Setup
 - [ ] Meeting Room
