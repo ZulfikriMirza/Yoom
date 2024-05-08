@@ -3,10 +3,15 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import HomeCard from "./HomeCard"
 import { useRouter } from 'next/navigation';
+import MeetingModal from './MeetingModal';
 
 const MeetingTypeList = () => {
   const router = useRouter();
   const [meetingState, setmeetingState] = useState<'isScheduleMeeting' | 'isJoiningMeeting' | 'isInstantMeeting' | undefined>()
+
+  const createMeeting = () => {
+    
+  }
 
     return (
         <section className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">
@@ -14,7 +19,7 @@ const MeetingTypeList = () => {
               img="/icons/add-meeting.svg"
               title="New Meeting"
               description="start an instant meeting"
-              handleClick={() => setMeetingState('isJoiningMeeting')}
+              handleClick={() => setmeetingState('isInstantMeeting')}
               className="bg-orange-1"
 
             />
@@ -25,7 +30,7 @@ const MeetingTypeList = () => {
                           img="/icons/schedule.svg"
                           title="Schedule Meeting"
                           description="Plan your meeting"
-                          handleClick={() => setMeetingState('isScheduleMeeting')}
+                    handleClick={() => setmeetingState('isScheduleMeeting')}
                      className="bg-blue-1"
             />
             <HomeCard 
@@ -33,17 +38,26 @@ const MeetingTypeList = () => {
               title="View Recordings"
               description="Check out your recording"
               className = "bg-purple-1"
-              handleClick={() => router.push('/recordings')}
-          
- />
+              handleClick={() => setmeetingState('isJoiningMeeting')}
+             />
+            
             <HomeCard 
-               img="/icons/add-meeting.svg"
-               title="New Meeting"
-               description="start an instant meeting"
+               img="/icons/join-meeting.svg"
+               title="Join Meeting"
+               description="via invitation Link"
                className="bg-yellow-1"
-               handleClick={() => router.push('/recordings')}
+               handleClick={() => setmeetingState('isJoiningMeeting')}
                      
             
+            />
+
+            <MeetingModal 
+              isOpen={meetingState === 'isInstantMeeting'}
+              onClose={() => setmeetingState(undefined)}
+              title="Start an Instant Meeting"
+              className="text-center"
+              buttonText="Start Meeting"
+              handleClick={createMeeting}
             />
         </section>
   )

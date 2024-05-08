@@ -4,8 +4,8 @@
 - [X] Sidebar
 - [X] Navbar
 - [X] Clerk Auth
-- [ ] HomePage
-- [ ] Reusable Modal
+- [X] HomePage
+- [X] Reusable Modal
 - [ ] Stream Create Meeting
 - [ ] Meetings Calls Setup
 - [ ] Meeting Setup

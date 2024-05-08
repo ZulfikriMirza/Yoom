@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
+import { cn } from '@/lib/utils';
 
 interface HomeCardProps {
     className: string,
@@ -12,10 +13,10 @@ interface HomeCardProps {
 
 const HomeCard = ({ className, img, title, description, handleClick }: HomeCardProps) => {
     return (
-        <div className={cn('px-4 py-6 flex flex-col justify-between w-full xl:max-w-[270px] min-h-[260px] rounded-[14px] cursor-pointer' onClick={() => {}}>
+        <div className={cn('px-4 py-6 flex flex-col justify-between w-full xl:max-w-[270px] min-h-[260px] rounded-[14px] cursor-pointer', className)} onClick={handleClick}>
             <div className="flex-center glassmorphism size-12 rounded-[10px]">
                 <Image
-                  src='/icons/add-meeting.svg'
+                  src={img}
                   alt="meeting"
                   width={27}
                   height={27}
@@ -23,8 +24,8 @@ const HomeCard = ({ className, img, title, description, handleClick }: HomeCardP
             </div>
 
             <div className="flex flex-col gap-2">
-                <h1 className="text-2xl font-bold">New Meeting</h1>
-                <p className="text-lg font-normal">Start an instant meeting </p>
+                <h1 className="text-2xl font-bold">{title}</h1>
+                <p className="text-lg font-normal">{description} </p>
             </div>
         </div>
     )
