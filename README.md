@@ -7,8 +7,8 @@
 - [X] HomePage
 - [X] Reusable Modal
 - [X] Stream Create Meeting
-- [ ] Meetings Calls Setup
-- [ ] Meeting Setup
+- [X] Meetings Calls Setup
+- [X] Meeting Setup
 - [ ] Meeting Room
 - [ ] Schedule Meeting
 - [ ] Upcoming Meetings Page
