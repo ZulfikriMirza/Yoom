@@ -9,8 +9,8 @@
 - [X] Stream Create Meeting
 - [X] Meetings Calls Setup
 - [X] Meeting Setup
-- [ ] Meeting Room
-- [ ] Schedule Meeting
+- [X] Meeting Room
+- [X] Schedule Meeting
 - [ ] Upcoming Meetings Page
 - [ ] Recordings Page
 - [ ] Personal Meeting Room
