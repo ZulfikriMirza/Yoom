@@ -11,8 +11,8 @@
 - [X] Meeting Setup
 - [X] Meeting Room
 - [X] Schedule Meeting
-- [ ] Upcoming Meetings Page
-- [ ] Recordings Page
+- [X] Upcoming Meetings Page
+- [X] Recordings Page
 - [ ] Personal Meeting Room
 - [ ] Join Meeting Modal
 - [ ] Deployment
