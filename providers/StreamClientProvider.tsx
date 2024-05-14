@@ -8,7 +8,7 @@ import {
     StreamVideo,
     StreamVideoClient,
   } from '@stream-io/video-react-sdk';
-import { useEffect, useState } from 'react';
+import { ReactNode, useEffect, useState } from 'react';
   
   const apiKey = process.env.NEXT_PUBLIC_STREAM_API_KEY;
 
