@@ -13,6 +13,6 @@
 - [X] Schedule Meeting
 - [X] Upcoming Meetings Page
 - [X] Recordings Page
-- [ ] Personal Meeting Room
-- [ ] Join Meeting Modal
+- [X] Personal Meeting Room
+- [X] Join Meeting Modal
 - [ ] Deployment
