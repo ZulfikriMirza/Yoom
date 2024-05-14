@@ -45,7 +45,7 @@ const PersonalRoom = () => {
     if (!call) {
       await newCall.getOrCreate({
         data: {
-          starts_at: new Date().toISOString(),
+          starts_at: (new Date().toISOString()),
         },
       });
     }
